@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homemade recipes</title>
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/b14dbf9f7d.js" crossorigin="anonymous"></script>
+    <!-- normalize  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- app css  -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="multiple-meal-page">
+
+    <header>
+        <div class="container">
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imgs/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="search-container">
+                <form id="form" action="">
+                    <input type="search" id="searchInput" name="search" placeholder="search...">
+                    <input type="submit" hidden />
+                </form>
+                <ul class="search-list">
+                </ul>
+            </div>
+            <div class="favorites-container">
+                <button class="show-fav-meals">
+                    <span class="my-fav-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </span>
+                    <span class="fav-number">0</span>
+                </button>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <aside> 
+            <button class="close">
+                <i class="fas fa-close"></i>
+            </button> 
+            <h3>Favorite Meals</h3> 
+            <ul class="fav-meals">
+            </ul>
+        </aside>
+
+        <div class="container">
+
+            <div class="categories">
+                <ul></ul>
+            </div>
+
+            <div class="meals-container"></div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/app.js" type="module"></script>
+
+
+</body>
+
+</html>
